@@ -20,6 +20,8 @@ divider(16);
 
 function changeSize(input) {
     divider(input);
+    document.querySelector('#size-indicator').textContent = `${input} x ${input}`;
+    document.querySelector('#size-indicator').style.color = 'black';
 };
 
 function colorGrid() {
