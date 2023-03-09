@@ -12,11 +12,12 @@
         <h1 id="title">Etch-a-Sketch</h1>
     </header>
     <main>
-        <div id="settings">
-        </div>
-        
-        <div id="grids-container">
-        </div>
+        <input type="range" id="size-slider" min="1" max="100" step="1" value="16" onchange="changeSize(this.value)">
+        <input type="color" id="color" onchange="changeColor(this.value)">
+        <p id="mode">Mode : Coloring</p>
+        <button onclick="changeColor('white')">Erasor</button>
+        <button onclick="clearBoard()">Clear</button>
+        <div id="grids-container"></div>
     </main>
     <footer>
 
